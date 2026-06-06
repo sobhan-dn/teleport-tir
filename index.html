@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
+    <meta name="theme-color" content="#063047" />
+    <title>Teleport Tir</title>
+  </head>
+  <body>
+    <div id="game-shell">
+      <div id="game-root"></div>
+      <div id="hud" aria-label="کنترل بازی">
+        <div class="topbar">
+          <div class="pill player">
+            <span>تو</span>
+            <strong id="playerHealth">100</strong>
+          </div>
+          <div class="pill mode" id="modeLabel">تیر: معمولی</div>
+          <div class="pill enemy">
+            <span>حریف</span>
+            <strong id="enemyHealth">100</strong>
+          </div>
+        </div>
+        <div class="toast" id="toast">ماهی‌ات را حرکت بده و با دو تیر رقابت کن</div>
+        <div class="controls">
+          <div class="stick" id="stick" aria-label="حرکت">
+            <div class="stick-knob" id="stickKnob"></div>
+          </div>
+          <div class="actions">
+            <button id="normalShot" class="action selected" type="button" aria-label="تیر معمولی">
+              <span class="icon">⚡</span>
+              <span class="label">شلیک</span>
+            </button>
+            <button id="teleportShot" class="action" type="button" aria-label="تیر تلپورت">
+              <span class="icon">🌀</span>
+              <span class="label">درگاه</span>
+            </button>
+            <button id="blink" class="action primary" type="button" aria-label="تلپورت">
+              <span class="icon">⤴</span>
+              <span class="label">برو</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
